@@ -1,0 +1,24 @@
+# Python virtual environment
+env/
+venv/
+.venv/
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Optional: ignore the trained model if you can regenerate it
+soil_model.pkl
+
+# Editor and Testing
+.vscode/
+.pytest_cache/

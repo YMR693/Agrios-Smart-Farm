@@ -1,0 +1,12 @@
+# PlatformIO build artifacts
+.pio/
+
+# Editor settings (Replaces individual file lines)
+.vscode/
+
+# Compiled library binaries
+**/*.lib
+
+# OS junk
+.DS_Store
+Thumbs.db

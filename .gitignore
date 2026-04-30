@@ -1,0 +1,12 @@
+# Global Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Global folder safety net (handles any sub-folder)
+**/node_modules/
+**/env/
+**/venv/
+**/.pio/
+**/__pycache__/
+**/.ipynb_checkpoints/

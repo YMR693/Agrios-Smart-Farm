@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "author": "soil project",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 172.8, "left": 24.04, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": 0.3, "left": 292.2, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot_ph", "top": 75.5, "left": 412.6, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot_n", "top": 190.7, "left": 412.6, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot_p", "top": 305.9, "left": 412.6, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot_k", "top": 421.1, "left": 412.6, "attrs": {} },
+    { "type": "wokwi-ssd1306", "id": "oled1", "top": 16.3, "left": -228.5, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 300,
+      "left": -249.4,
+      "rotate": 180,
+      "attrs": { "color": "green" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "pot_ph:VCC", "esp:3V3.1", "red", [ "h-70", "v-50", "h-220", "v50" ] ],
+    [ "pot_n:VCC", "esp:3V3.2", "red", [ "h-70", "v-50", "h-220", "v50" ] ],
+    [ "pot_p:VCC", "esp:3V3.3", "red", [ "h-70", "v-50", "h-220", "v50" ] ],
+    [ "pot_p:GND", "esp:GND.4", "black", [ "h-80", "v30", "h-210" ] ],
+    [ "pot_k:VCC", "esp:3V3.4", "red", [ "h-70", "v-50", "h-220", "v50" ] ],
+    [ "pot_k:GND", "esp:GND.5", "black", [ "h-80", "v30", "h-210" ] ],
+    [ "oled1:SDA", "esp:21", "purple", [ "h-30", "v310", "h-470" ] ],
+    [ "oled1:SCL", "esp:22", "purple", [ "h-40", "v330", "h-460" ] ],
+    [ "oled1:VCC", "esp:3V3.5", "red", [ "h-50", "v-40", "h-510", "v40" ] ],
+    [ "oled1:GND", "esp:GND.6", "black", [ "h-60", "v350", "h-500" ] ],
+    [ "btn1:2.l", "esp:GND.7", "black", [ "h-80", "v70", "h-310" ] ],
+    [ "esp:13", "btn1:1.l", "white", [ "h-191.85", "v-19.2" ] ],
+    [ "btn1:2.l", "esp:GND.1", "blue", [ "h134.4", "v9.4" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v0", "h-297.6", "v86.4" ] ],
+    [ "dht1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "dht1:SDA", "esp:15", "cyan", [ "v0" ] ],
+    [ "pot_ph:GND", "esp:GND.2", "black", [ "v19.2", "h-9.6" ] ],
+    [ "pot_n:GND", "esp:GND.3", "black", [ "v0" ] ],
+    [ "pot_p:GND", "esp:GND.3", "black", [ "v0", "h-288", "v-115.2" ] ],
+    [ "pot_k:GND", "esp:GND.3", "black", [ "v0", "h-297.6", "v-230.4" ] ],
+    [ "esp:34", "pot_ph:SIG", "green", [ "h-47.85", "v-57.6", "h480" ] ],
+    [ "esp:32", "pot_n:SIG", "purple", [ "h-47.85", "v249.6", "h355.2", "v-230.4", "h105.6" ] ],
+    [ "esp:33", "pot_p:SIG", "yellow", [ "h-38.25", "v297.6", "h374.4", "v-163.2", "h86.4" ] ],
+    [ "esp:35", "pot_k:SIG", "gray", [ "h-76.65", "v355.2", "h480" ] ]
+  ],
+  "dependencies": {}
+}

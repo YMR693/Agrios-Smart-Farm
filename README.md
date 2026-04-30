@@ -132,10 +132,11 @@ The interface was carefully designed to be intuitive and accessible for both far
 
 ## 👥 The Agrios Team
 
-| Name | Role |
-| :--- | :--- |
-| **Yassine Maarouf** | Backend, Machine Learning & IoT |
-| **Fatima Ezzahrae Baiha** | Development & UI/UX |
-| **Hasna Hamdani** | Development & UI/UX |
+
+This project was brought to life by the collaborative efforts of our dedicated team:
+
+*   **Yassine Maarouf** — IISE ( IoT )
+*   **Fatima Ezzahrae Baiha** — ADIA ( Backend, Machine Learning )
+*   **Hasna Hamdani** — IL ( Development & UI/UX )
 
 <p align="center">Built with 🌱 by the Agrios Team</p>

@@ -132,18 +132,13 @@ The interface was carefully designed to be intuitive and accessible for both far
 
 ## 👥 The Agrios Team
 
+## 👥 The Agrios Team
+
 | Name | Role |
 
 | **Yassine Maarouf** | IoT |
-| **Fatima Ezzahrae Baiha** | Development & UI/UX |
-| **Hasna Hamdani** | Backend, Machine Learning |
-
----
-
-## 📄 License
-
-This project is open-source. Feel free to fork, contribute, and build upon it.
-
+| **Fatima Ezzahrae Baiha** | Backend & Machine Learning |
+| **Hasna Hamdani** | Development & UI/UX |
 ---
 
 <div align="center">
